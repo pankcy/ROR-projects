@@ -1,0 +1,29 @@
+<main class="ideas">
+  <section class="text-center">
+    <div class="container">
+      <h1>All awesome ideas</h1>
+
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th colspan="3">Actions</th>
+        </tr>
+
+        <% @ideas.each do |idea| %>
+          <tr>
+            <td><%= idea.title %></td>
+            <td><%= idea.description %></td>
+            <td><%= link_to 'Show', idea_path(idea) %></td>
+            <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+            <td><%= link_to 'Delete', idea_path(idea), method: :delete, data: { confirm: 'Are you sure, you want to delete this idea?' } %></td>
+          </tr>
+        <% end %>
+      </table>
+
+      <p>
+        <%= link_to  "Create An Idea", new_idea_path, class: 'btn btn-primary' %>
+      </p>
+    </div>
+  </section>
+</main>

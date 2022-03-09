@@ -1,0 +1,56 @@
+.ideas {
+	padding: 6rem 0;
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	/* idea index */
+	table {
+		border-collapse: collapse;
+	}
+	td,
+	th {
+		border: 1px solid #ddd;
+		text-align: left;
+		padding: 10px;
+	}
+	tr:nth-child(even) {
+		background-color: #eee;
+	}
+
+	/* index show */
+	.idea {
+		border: 1px solid #ddd;
+		width: 350px;
+	}
+	.idea .title {
+		background-color: #eee;
+		padding: 10px;
+	}
+	.idea .description {
+		padding: 10px;
+		height: 100px;
+	}
+
+	/* idea form */
+	form {
+		padding: 10px;
+		background-color: #eee;
+	}
+	form p:first-of-type input {
+		width: 95%;
+	}
+	form input,
+	textarea {
+		box-sizing: border-box;
+		font-family: inherit;
+		font-size: inherit;
+		padding: 0.3rem 0.5rem;
+	}
+	form textarea {
+		width: 95%;
+		height: 100px;
+	}
+}

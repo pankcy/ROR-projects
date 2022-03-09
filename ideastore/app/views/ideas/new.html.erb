@@ -1,0 +1,23 @@
+<main class="ideas">
+  <section class="text-center">
+    <div class="container">
+      <h1>New Idea</h1>
+
+      <%= form_with scope: :idea, url: ideas_path, local: true do |form| %>
+        <p>
+          <%= form.label :title %><br>
+          <%= form.text_field :title, placeholder: 'your idea title ...' %>
+        </p>
+
+        <p>
+          <%= form.label :description %><br>
+          <%= form.text_area :description, placeholder: 'your idea description ...' %>
+        </p>
+
+        <p>
+          <%= form.submit %>
+        </p>
+      <% end %>
+    </div>
+  </section>
+</main>

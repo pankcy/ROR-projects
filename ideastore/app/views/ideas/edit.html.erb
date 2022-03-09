@@ -1,0 +1,27 @@
+<main class="ideas">
+  <section class="text-center">
+    <div class="container">
+      <h1>Edit Idea</h1>
+
+      <%= form_with model: @idea, local: true do |form| %>
+        <p>
+          <%= form.label :title %><br>
+          <%= form.text_field :title, placeholder: 'your idea title ...' %>
+        </p>
+
+        <p>
+          <%= form.label :description %><br>
+          <%= form.text_area :description, placeholder: 'your idea description ...' %>
+        </p>
+
+        <p>
+          <%= form.submit %>
+        </p>
+      <% end %>
+
+      <p>
+        <%= link_to  "Cancel and return", ideas_path, class: 'btn btn-primary' %>
+      </p>
+    </div>
+  </section>
+</main>

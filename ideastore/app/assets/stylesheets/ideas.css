@@ -1,0 +1,64 @@
+.ideas {
+	padding: 6rem 0;
+	/* idea index */
+	/* index show */
+	/* idea form */
+}
+
+.ideas table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.ideas table {
+	border-collapse: collapse;
+}
+
+.ideas td,
+.ideas th {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 10px;
+}
+
+.ideas tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.ideas .idea {
+	border: 1px solid #ddd;
+}
+
+.ideas .idea .title {
+	background-color: #eee;
+	padding: 10px;
+}
+
+.ideas .idea .description {
+	padding: 10px;
+	height: 100px;
+}
+
+.ideas form {
+	padding: 10px;
+	background-color: #eee;
+}
+
+.ideas form p:first-of-type input {
+	width: 95%;
+}
+
+.ideas form input,
+.ideas textarea {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.3rem 0.5rem;
+}
+
+.ideas form textarea {
+	width: 95%;
+	height: 100px;
+}
+/*# sourceMappingURL=ideas.css.map */

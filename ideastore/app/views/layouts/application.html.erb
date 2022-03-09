@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ideastore</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "pages", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "ideas", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "application" %>
+  </head>
+
+  <body>
+    <header id="home">
+        <!-- Navbar -->
+        <nav id="navbar">
+          <div class="container">
+            <h1 class="logo">
+              <%= link_to "Idea Store", root_path %>
+            </h1>
+            <ul>
+              <li>
+                <%= link_to  "Home", root_path, class: 'active' %>
+              </li>
+              <li>
+                <%= link_to  "Ideas", ideas_path %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>      
+    <%= yield %>
+  </body>
+</html>
